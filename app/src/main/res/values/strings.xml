@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Contador</string>
+
+        <string name="PMonedas" translatable="false">PMonedas</string>
+        <string name="PValorClick" translatable="false">PValorClick</string>
+        <string name="PValorAutoClick" translatable="false">PValorAutoClick</string>
+
+        <string name="Precio_Basico" translatable="false">precioBasico</string>
+        <string name="Precio_BBasico" translatable="false">precioBBasico</string>
+        <string name="Precio_Auto" translatable="false">precioAuto</string>
+        <string name="Precio_AutoB" translatable="false">precioBAuto</string>
+
+        <string name="launch_welcome_text">¡Bienvenido a mi contador!</string>
+        <string name="botonjugar">Jugar</string>
+        <string name="botonopciones">Opciones</string>
+        <string name="botoninfo">Información</string>
+        <string name="botoncerrar">Cerrar</string>
+
+        <string name="textoOpciones">Opciones (En mantenimiento)</string>
+        <string name="PModoOscuro" translatable="false">cambiarTema</string>
+        <string name="cambiarTema">Cambiar Tema</string>
+        <string name="nombreTema">Modo oscuro</string>
+        <string name="descripcionTema">En mantenimiento...</string>
+
+        <string name="botonmoneda">Toca las monedas para comenzar.</string>
+        <string name="botonprincipal">A coin</string>
+        <string name="monedasporclick">Monedas por Click</string>
+        <string name="monedasautoclick">Monedas Automáticas</string>
+        <string name="monedasporsegundo">Monedas por segundo</string>
+        <string name="game_money_bag_content_description">Money bag</string>
+
+        <string name="monedastotales">value</string>
+        <string name="mejoraclick">Click</string>
+        <string name="mejoraautoclick">Autoclick</string>
+        <string name="mejoraclickb">Click Boosteado</string>
+        <string name="mejoraautoclickb">Autoclick Boosteado</string>
+</resources>

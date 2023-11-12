@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/background_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pantallas.PantallaJuego">
+
+    <TextView
+        android:id="@+id/text_coins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu"
+        android:text="@string/botonmoneda"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243" />
+
+    <ImageView
+        android:id="@+id/image_actionable_coins"
+        android:layout_width="176dp"
+        android:layout_height="246dp"
+        android:contentDescription="@string/botonmoneda"
+        android:onClick="addOnClick"
+        android:src="@drawable/coinstack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_coins"
+        app:layout_constraintVertical_bias="0.455" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/barra"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            style="@style/info_bar_child"
+            android:background="@drawable/hbarra">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="4dp"
+                android:onClick="returnOnClick"
+                app:srcCompat="@drawable/atras" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/info_bar_child"
+            android:background="@drawable/hbarra">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="@string/monedasporclick"
+                app:srcCompat="@drawable/coinstack" />
+
+            <TextView
+                android:id="@+id/text_click_value"
+                style="@style/textview_style"
+                android:text=""
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/info_bar_child"
+            android:background="@drawable/hbarra">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="@string/monedasautoclick"
+                app:srcCompat="@drawable/autoclicker" />
+
+            <TextView
+                android:id="@+id/text_auto_click"
+                style="@style/textview_style" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/info_bar_child"
+            android:background="@drawable/hbarra">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="@string/monedasporsegundo"
+                app:srcCompat="@drawable/mpers" />
+
+            <TextView
+                android:id="@+id/text_coin_rate"
+                style="@style/textview_style" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="shopImageOnClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121"
+        app:srcCompat="@drawable/market" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
